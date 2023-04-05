@@ -16,6 +16,23 @@
             opacity: 1;
             transform: translateX(0);
         }
+        /* Custom styles for responsive design */
+        @media (max-width: 575.98px) {
+            .hero {
+                font-size: 0.8em;
+            }
+            .card-img-top {
+                width: 48px;
+                height: 48px;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .py-5 {
+                padding-top: 2rem!important;
+                padding-bottom: 2rem!important;
+            }
+        }
     </style>    
 </head>
 <body>
@@ -50,7 +67,7 @@
     <section id="features" class="container py-5">
         <h2 class="text-center mb-5">Our Features</h2>
         <div class="row">
-            <div class="col-md-4 slide-in-left">
+            <div class="col-12 col-sm-6 col-md-4">
                 <div class="card text-center">
                     <img src="aggregated_subscription.svg" class="card-img-top mx-auto mt-4" alt="Aggregated Subscription" style="width: 256px; height: 256px;">
                     <div class="card-body">
@@ -59,7 +76,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 slide-in-left">
+            <div class="col-12 col-sm-6 col-md-4">
                 <div class="card text-center">
                     <img src="ai_usage_guide.png" class="card-img-top mx-auto mt-4" alt="AI Usage Guide" style="width: 256px; height: 256px;">
                     <div class="card-body">
@@ -68,7 +85,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 slide-in-left">
+            <div class="col-12 col-sm-6 col-md-4">
                 <div class="card text-center">
                     <img src="custom_ai_integration.svg" class="card-img-top mx-auto mt-4" alt="Custom AI Integration" style="width: 256px; height: 256px;">
                     <div class="card-body">
@@ -79,13 +96,9 @@
             </div>
         </div>
     </section>
-    <section id="pricing" class="container py-5">
-        <h2 class="text-center mb-5">Pricing</h2>
-        <!-- Add pricing table or pricing cards here -->
-    </section>
     <section id="contact" class="container py-5">
         <h2 class="text-center mb-5">Contact Us</h2>
-        <p class="text-center mb-4">We understand your pain, we won't spam you or sell your data. We will contact you once we have a solution to help your business</p>
+        <p class="text-center mb-4">We value your privacy and time, we won't spam you. However, please share your business challenges with us and we'll contact you only when we have a tailored solution to boost efficiency and growth.</p>
         <form action="https://formspree.io/f/xayzpzdd" method="POST" class="row g-3 justify-content-center">
             <div class="col-md-6">
                 <label for="email" class="form-label">Email:</label>
@@ -93,7 +106,7 @@
             </div>
             <div class="col-md-7">
                 <label for="message" class="form-label">Use case:</label>
-                <textarea name="message" id="message" class="form-control" rows="4">Describe your pain points and places where maximum time goes in your business: </textarea>
+                <textarea name="message" id="message" class="form-control" rows="4">Describe your pain points and places where maximum time/money goes in your business: </textarea>
             </div>
             <div class="col-md-12 text-center">
                 <button type="submit" class="btn btn-primary">Send</button>
